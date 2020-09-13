@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BAE3E59250EA760001C4DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE3E58250EA760001C4DF7 /* AppDelegate.swift */; };
+		1BAE3E63250EA760001C4DF7 /* Pockemons.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE3E61250EA760001C4DF7 /* Pockemons.xcdatamodeld */; };
+		1BAE3E65250EA762001C4DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BAE3E64250EA762001C4DF7 /* Assets.xcassets */; };
+		1BAE3E68250EA762001C4DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAE3E66250EA762001C4DF7 /* LaunchScreen.storyboard */; };
+		1BAE3E73250EA762001C4DF7 /* PockemonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE3E72250EA762001C4DF7 /* PockemonsTests.swift */; };
+		1BAE3E7E250EA762001C4DF7 /* PockemonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE3E7D250EA762001C4DF7 /* PockemonsUITests.swift */; };
+		1BAE3E90250EA96D001C4DF7 /* PockemonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE3E8F250EA96D001C4DF7 /* PockemonsListViewController.swift */; };
+		1BAE3E97250EAD1E001C4DF7 /* PockemonsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE3E96250EAD1E001C4DF7 /* PockemonsListBuilder.swift */; };
+		1BAE3E99250EAD35001C4DF7 /* PockemonsListDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE3E98250EAD35001C4DF7 /* PockemonsListDataFlow.swift */; };
+		1BAE3E9B250EAD45001C4DF7 /* PockemonsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE3E9A250EAD45001C4DF7 /* PockemonsListInteractor.swift */; };
+		1BAE3E9D250EAD54001C4DF7 /* PockemonsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE3E9C250EAD54001C4DF7 /* PockemonsListPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BAE3E6F250EA762001C4DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BAE3E4D250EA760001C4DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BAE3E54250EA760001C4DF7;
+			remoteInfo = Pockemons;
+		};
+		1BAE3E7A250EA762001C4DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BAE3E4D250EA760001C4DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BAE3E54250EA760001C4DF7;
+			remoteInfo = Pockemons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BAE3E55250EA760001C4DF7 /* Pockemons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pockemons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BAE3E58250EA760001C4DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BAE3E62250EA760001C4DF7 /* Pockemons.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pockemons.xcdatamodel; sourceTree = "<group>"; };
+		1BAE3E64250EA762001C4DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BAE3E67250EA762001C4DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BAE3E69250EA762001C4DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BAE3E6E250EA762001C4DF7 /* PockemonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PockemonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BAE3E72250EA762001C4DF7 /* PockemonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockemonsTests.swift; sourceTree = "<group>"; };
+		1BAE3E74250EA762001C4DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BAE3E79250EA762001C4DF7 /* PockemonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PockemonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BAE3E7D250EA762001C4DF7 /* PockemonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockemonsUITests.swift; sourceTree = "<group>"; };
+		1BAE3E7F250EA762001C4DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BAE3E8F250EA96D001C4DF7 /* PockemonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockemonsListViewController.swift; sourceTree = "<group>"; };
+		1BAE3E96250EAD1E001C4DF7 /* PockemonsListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockemonsListBuilder.swift; sourceTree = "<group>"; };
+		1BAE3E98250EAD35001C4DF7 /* PockemonsListDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockemonsListDataFlow.swift; sourceTree = "<group>"; };
+		1BAE3E9A250EAD45001C4DF7 /* PockemonsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockemonsListInteractor.swift; sourceTree = "<group>"; };
+		1BAE3E9C250EAD54001C4DF7 /* PockemonsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockemonsListPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BAE3E52250EA760001C4DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BAE3E6B250EA762001C4DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BAE3E76250EA762001C4DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BAE3E4C250EA760001C4DF7 = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E57250EA760001C4DF7 /* Pockemons */,
+				1BAE3E71250EA762001C4DF7 /* PockemonsTests */,
+				1BAE3E7C250EA762001C4DF7 /* PockemonsUITests */,
+				1BAE3E56250EA760001C4DF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BAE3E56250EA760001C4DF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E55250EA760001C4DF7 /* Pockemons.app */,
+				1BAE3E6E250EA762001C4DF7 /* PockemonsTests.xctest */,
+				1BAE3E79250EA762001C4DF7 /* PockemonsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BAE3E57250EA760001C4DF7 /* Pockemons */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E8E250EA952001C4DF7 /* Sources */,
+				1BAE3E8C250EA92D001C4DF7 /* Storages */,
+				1BAE3E8B250EA91A001C4DF7 /* SupportingFiles */,
+			);
+			path = Pockemons;
+			sourceTree = "<group>";
+		};
+		1BAE3E71250EA762001C4DF7 /* PockemonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E72250EA762001C4DF7 /* PockemonsTests.swift */,
+				1BAE3E74250EA762001C4DF7 /* Info.plist */,
+			);
+			path = PockemonsTests;
+			sourceTree = "<group>";
+		};
+		1BAE3E7C250EA762001C4DF7 /* PockemonsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E7D250EA762001C4DF7 /* PockemonsUITests.swift */,
+				1BAE3E7F250EA762001C4DF7 /* Info.plist */,
+			);
+			path = PockemonsUITests;
+			sourceTree = "<group>";
+		};
+		1BAE3E8B250EA91A001C4DF7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E58250EA760001C4DF7 /* AppDelegate.swift */,
+				1BAE3E64250EA762001C4DF7 /* Assets.xcassets */,
+				1BAE3E66250EA762001C4DF7 /* LaunchScreen.storyboard */,
+				1BAE3E69250EA762001C4DF7 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1BAE3E8C250EA92D001C4DF7 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E8D250EA93C001C4DF7 /* CoreData */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		1BAE3E8D250EA93C001C4DF7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E61250EA760001C4DF7 /* Pockemons.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		1BAE3E8E250EA952001C4DF7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E91250EAC95001C4DF7 /* PockemonsList */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1BAE3E91250EAC95001C4DF7 /* PockemonsList */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE3E92250EACD2001C4DF7 /* Models */,
+				1BAE3E93250EACDD001C4DF7 /* Provider */,
+				1BAE3E94250EACF0001C4DF7 /* View */,
+				1BAE3E95250EACF9001C4DF7 /* ViewModel */,
+				1BAE3E96250EAD1E001C4DF7 /* PockemonsListBuilder.swift */,
+				1BAE3E98250EAD35001C4DF7 /* PockemonsListDataFlow.swift */,
+				1BAE3E9A250EAD45001C4DF7 /* PockemonsListInteractor.swift */,
+				1BAE3E9C250EAD54001C4DF7 /* PockemonsListPresenter.swift */,
+				1BAE3E8F250EA96D001C4DF7 /* PockemonsListViewController.swift */,
+			);
+			path = PockemonsList;
+			sourceTree = "<group>";
+		};
+		1BAE3E92250EACD2001C4DF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1BAE3E93250EACDD001C4DF7 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		1BAE3E94250EACF0001C4DF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BAE3E95250EACF9001C4DF7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BAE3E54250EA760001C4DF7 /* Pockemons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BAE3E82250EA762001C4DF7 /* Build configuration list for PBXNativeTarget "Pockemons" */;
+			buildPhases = (
+				1BAE3E51250EA760001C4DF7 /* Sources */,
+				1BAE3E52250EA760001C4DF7 /* Frameworks */,
+				1BAE3E53250EA760001C4DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pockemons;
+			productName = Pockemons;
+			productReference = 1BAE3E55250EA760001C4DF7 /* Pockemons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BAE3E6D250EA762001C4DF7 /* PockemonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BAE3E85250EA762001C4DF7 /* Build configuration list for PBXNativeTarget "PockemonsTests" */;
+			buildPhases = (
+				1BAE3E6A250EA762001C4DF7 /* Sources */,
+				1BAE3E6B250EA762001C4DF7 /* Frameworks */,
+				1BAE3E6C250EA762001C4DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BAE3E70250EA762001C4DF7 /* PBXTargetDependency */,
+			);
+			name = PockemonsTests;
+			productName = PockemonsTests;
+			productReference = 1BAE3E6E250EA762001C4DF7 /* PockemonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BAE3E78250EA762001C4DF7 /* PockemonsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BAE3E88250EA762001C4DF7 /* Build configuration list for PBXNativeTarget "PockemonsUITests" */;
+			buildPhases = (
+				1BAE3E75250EA762001C4DF7 /* Sources */,
+				1BAE3E76250EA762001C4DF7 /* Frameworks */,
+				1BAE3E77250EA762001C4DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BAE3E7B250EA762001C4DF7 /* PBXTargetDependency */,
+			);
+			name = PockemonsUITests;
+			productName = PockemonsUITests;
+			productReference = 1BAE3E79250EA762001C4DF7 /* PockemonsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BAE3E4D250EA760001C4DF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = ru.baluhman.simplec;
+				TargetAttributes = {
+					1BAE3E54250EA760001C4DF7 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					1BAE3E6D250EA762001C4DF7 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 1BAE3E54250EA760001C4DF7;
+					};
+					1BAE3E78250EA762001C4DF7 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 1BAE3E54250EA760001C4DF7;
+					};
+				};
+			};
+			buildConfigurationList = 1BAE3E50250EA760001C4DF7 /* Build configuration list for PBXProject "Pockemons" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BAE3E4C250EA760001C4DF7;
+			productRefGroup = 1BAE3E56250EA760001C4DF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BAE3E54250EA760001C4DF7 /* Pockemons */,
+				1BAE3E6D250EA762001C4DF7 /* PockemonsTests */,
+				1BAE3E78250EA762001C4DF7 /* PockemonsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BAE3E53250EA760001C4DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAE3E68250EA762001C4DF7 /* LaunchScreen.storyboard in Resources */,
+				1BAE3E65250EA762001C4DF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BAE3E6C250EA762001C4DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BAE3E77250EA762001C4DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BAE3E51250EA760001C4DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAE3E90250EA96D001C4DF7 /* PockemonsListViewController.swift in Sources */,
+				1BAE3E99250EAD35001C4DF7 /* PockemonsListDataFlow.swift in Sources */,
+				1BAE3E63250EA760001C4DF7 /* Pockemons.xcdatamodeld in Sources */,
+				1BAE3E59250EA760001C4DF7 /* AppDelegate.swift in Sources */,
+				1BAE3E9B250EAD45001C4DF7 /* PockemonsListInteractor.swift in Sources */,
+				1BAE3E97250EAD1E001C4DF7 /* PockemonsListBuilder.swift in Sources */,
+				1BAE3E9D250EAD54001C4DF7 /* PockemonsListPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BAE3E6A250EA762001C4DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAE3E73250EA762001C4DF7 /* PockemonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BAE3E75250EA762001C4DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAE3E7E250EA762001C4DF7 /* PockemonsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BAE3E70250EA762001C4DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BAE3E54250EA760001C4DF7 /* Pockemons */;
+			targetProxy = 1BAE3E6F250EA762001C4DF7 /* PBXContainerItemProxy */;
+		};
+		1BAE3E7B250EA762001C4DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BAE3E54250EA760001C4DF7 /* Pockemons */;
+			targetProxy = 1BAE3E7A250EA762001C4DF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BAE3E66250EA762001C4DF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BAE3E67250EA762001C4DF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BAE3E80250EA762001C4DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BAE3E81250EA762001C4DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BAE3E83250EA762001C4DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZKU8NDVW2;
+				INFOPLIST_FILE = Pockemons/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.baluhman.simplec.Pockemons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BAE3E84250EA762001C4DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZKU8NDVW2;
+				INFOPLIST_FILE = Pockemons/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.baluhman.simplec.Pockemons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BAE3E86250EA762001C4DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZKU8NDVW2;
+				INFOPLIST_FILE = PockemonsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.baluhman.simplec.PockemonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pockemons.app/Pockemons";
+			};
+			name = Debug;
+		};
+		1BAE3E87250EA762001C4DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZKU8NDVW2;
+				INFOPLIST_FILE = PockemonsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.baluhman.simplec.PockemonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pockemons.app/Pockemons";
+			};
+			name = Release;
+		};
+		1BAE3E89250EA762001C4DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZKU8NDVW2;
+				INFOPLIST_FILE = PockemonsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.baluhman.simplec.PockemonsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pockemons;
+			};
+			name = Debug;
+		};
+		1BAE3E8A250EA762001C4DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZKU8NDVW2;
+				INFOPLIST_FILE = PockemonsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.baluhman.simplec.PockemonsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pockemons;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BAE3E50250EA760001C4DF7 /* Build configuration list for PBXProject "Pockemons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BAE3E80250EA762001C4DF7 /* Debug */,
+				1BAE3E81250EA762001C4DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BAE3E82250EA762001C4DF7 /* Build configuration list for PBXNativeTarget "Pockemons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BAE3E83250EA762001C4DF7 /* Debug */,
+				1BAE3E84250EA762001C4DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BAE3E85250EA762001C4DF7 /* Build configuration list for PBXNativeTarget "PockemonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BAE3E86250EA762001C4DF7 /* Debug */,
+				1BAE3E87250EA762001C4DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BAE3E88250EA762001C4DF7 /* Build configuration list for PBXNativeTarget "PockemonsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BAE3E89250EA762001C4DF7 /* Debug */,
+				1BAE3E8A250EA762001C4DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1BAE3E61250EA760001C4DF7 /* Pockemons.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1BAE3E62250EA760001C4DF7 /* Pockemons.xcdatamodel */,
+			);
+			currentVersion = 1BAE3E62250EA760001C4DF7 /* Pockemons.xcdatamodel */;
+			path = Pockemons.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1BAE3E4D250EA760001C4DF7 /* Project object */;
+}
