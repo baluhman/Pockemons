@@ -6,4 +6,25 @@
 //  Copyright © 2020 ru.baluhman.simplec. All rights reserved.
 //
 
-import Foundation
+enum PockemonList {
+    struct ShowItems {
+        struct Request {
+            
+        }
+        
+        struct Response {
+            var result: Result<[PockemonListModel], Error>
+        }
+        
+        struct ViewModel {
+            var state: ViewControllerState
+        }
+    }
+    
+    enum ViewControllerState {
+        case loading
+        case result([PockemonListViewModel])
+        case emptyResult(title: String, subtitle: String)
+        case error(message: String)
+    }
+}

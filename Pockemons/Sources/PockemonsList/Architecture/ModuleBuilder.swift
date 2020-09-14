@@ -1,5 +1,5 @@
 //
-//  PockemonsListBuilder.swift
+//  ModuleBuilder.swift
 //  Pockemons
 //
 //  Created by Краснов Олег on 13.09.2020.
@@ -8,9 +8,6 @@
 
 import UIKit
 
-class PockemonsListBuilder: ModuleBuilder {
-    
-    func build() -> UIViewController {
-        <#code#>
-    }
+protocol ModuleBuilder {
+    func build() -> UIViewController
 }
